@@ -1,9 +1,10 @@
 package lapis
 
 import (
-	"lapis-go/router"
-	"lapis-go/security"
 	"net/http"
+
+	"github.com/limbo-tree/lapis-go/router"
+	"github.com/limbo-tree/lapis-go/security"
 
 	"github.com/gofiber/fiber/v2"
 )

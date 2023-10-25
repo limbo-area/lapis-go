@@ -2,9 +2,10 @@ package router
 
 import (
 	"container/list"
-	"lapis-go/security"
-	"lapis-go/utils"
 	"reflect"
+
+	"github.com/limbo-tree/lapis-go/security"
+	"github.com/limbo-tree/lapis-go/utils"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"

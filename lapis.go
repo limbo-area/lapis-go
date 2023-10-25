@@ -2,9 +2,10 @@ package lapis
 
 import (
 	"encoding/json"
-	"lapis-go/router"
-	"lapis-go/swagger"
 	"log"
+
+	"github.com/limbo-tree/lapis-go/router"
+	"github.com/limbo-tree/lapis-go/swagger"
 
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/gofiber/fiber/v2"

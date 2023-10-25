@@ -1,10 +1,11 @@
 package cache
 
 import (
-	"lapis-go/common/utils"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/limbo-tree/lapis-go/common/utils"
 )
 
 type Storage struct {

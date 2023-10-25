@@ -2,7 +2,8 @@ package middleware
 
 import (
 	"errors"
-	"lapis-go/exception"
+
+	"github.com/limbo-tree/lapis-go/exception"
 
 	"github.com/gofiber/fiber/v2"
 )

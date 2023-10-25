@@ -1,7 +1,7 @@
 package router
 
 import (
-	"lapis-go/security"
+	"github.com/limbo-tree/lapis-go/security"
 
 	"github.com/gofiber/fiber/v2"
 )

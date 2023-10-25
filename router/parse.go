@@ -1,9 +1,10 @@
 package router
 
 import (
-	"lapis-go/constants"
 	"reflect"
 	"strings"
+
+	"github.com/limbo-tree/lapis-go/constants"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/utils"

@@ -1,9 +1,6 @@
 package swagger
 
 import (
-	"lapis-go/constants"
-	"lapis-go/router"
-	"lapis-go/security"
 	"log"
 	"mime/multipart"
 	"net/http"
@@ -12,6 +9,10 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/limbo-tree/lapis-go/constants"
+	"github.com/limbo-tree/lapis-go/router"
+	"github.com/limbo-tree/lapis-go/security"
 
 	"github.com/fatih/structtag"
 	"github.com/getkin/kin-openapi/openapi3"

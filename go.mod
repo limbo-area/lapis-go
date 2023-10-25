@@ -1,4 +1,4 @@
-module lapis-go
+module github.com/limbo-tree/lapis-go
 
 go 1.18
 
