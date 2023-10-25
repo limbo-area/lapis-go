@@ -10,11 +10,14 @@ require (
 	github.com/golang-jwt/jwt/v5 v5.0.0
 	github.com/google/uuid v1.3.1
 	github.com/jinzhu/copier v0.4.0
+	github.com/redis/go-redis/v9 v9.2.1
 	github.com/spf13/viper v1.17.0
 )
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
+	github.com/cespare/xxhash/v2 v2.2.0 // indirect
+	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.2 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
