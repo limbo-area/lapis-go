@@ -1,4 +1,4 @@
-PROJECT_NAME := 'lapis-go'
+PROJECT_NAME := "lapis-go"
 PKG := "github.com/limbo-tree/${PROJECT_NAME}"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/ )
 
