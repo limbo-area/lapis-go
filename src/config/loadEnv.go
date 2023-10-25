@@ -6,12 +6,8 @@ type GlobalConfig struct {
 	NodeEnv    string `mapstructure:"NODE_ENV"`
 	Port       string `mapstructure:"PORT"`
 	HostUrl    string `mapstructure:"HOST_URL"`
-	DBUrl      string `mapstructure:"DB_URL"`
 	PublicKey  string `mapstructure:"PUBLIC_KEY"`
-	PrivateKey string `mapstructure:"PRIVATE_KEY"`
 	ApiContext string `mapstructure:"API_CONTEXT"`
-	ApiKey     string `mapstructure:"API_KEY"`
-	AuthPrefix string `mapstructure:"AUTH_PREFIX"`
 }
 
 var config *GlobalConfig
