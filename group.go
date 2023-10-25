@@ -1,8 +1,8 @@
 package lapis
 
 import (
-	"lapis-go/src/router"
-	"lapis-go/src/security"
+	"lapis-go/router"
+	"lapis-go/security"
 	"net/http"
 
 	"github.com/gofiber/fiber/v2"

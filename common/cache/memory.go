@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"lapis-go/src/common/utils"
+	"lapis-go/common/utils"
 	"sync"
 	"sync/atomic"
 	"time"

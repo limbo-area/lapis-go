@@ -1,9 +1,9 @@
 package swagger
 
 import (
-	"lapis-go/src/constants"
-	"lapis-go/src/router"
-	"lapis-go/src/security"
+	"lapis-go/constants"
+	"lapis-go/router"
+	"lapis-go/security"
 	"log"
 	"mime/multipart"
 	"net/http"

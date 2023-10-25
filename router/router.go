@@ -2,8 +2,8 @@ package router
 
 import (
 	"container/list"
-	"lapis-go/src/security"
-	"lapis-go/src/utils"
+	"lapis-go/security"
+	"lapis-go/utils"
 	"reflect"
 
 	"github.com/go-playground/validator/v10"

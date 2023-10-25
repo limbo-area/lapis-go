@@ -2,8 +2,8 @@ package lapis
 
 import (
 	"encoding/json"
-	"lapis-go/src/router"
-	"lapis-go/src/swagger"
+	"lapis-go/router"
+	"lapis-go/swagger"
 	"log"
 
 	"github.com/getkin/kin-openapi/openapi3"

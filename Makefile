@@ -1,11 +1,15 @@
-build:
-	go build -o bin/main src/main.go
-run:
-	go run src/main.go
-start:
-	bin/main
-compile:
-	echo "Compiling for every OS and Platform"
-	GOOS=linux GOARCH=arm go build -o bin/main-linux-arm main.go
-	GOOS=linux GOARCH=arm64 go build -o bin/main-linux-arm64 main.go
-	GOOS=freebsd GOARCH=386 go build -o bin/main-freebsd-386 main.go
+PROJECT_NAME := 'lapis-go'
+PKG := "github.com/limbo-tree/${PROJECT_NAME}"
+PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/ )
+
+dep:
+	@go get -v -d ./..
+
+build: dep
+	@go build -v ${PKG}
+
+clean:
+	@rm -f ${PROJECT_NAME}
+
+format:
+	@gofumpt -l -w . && golines . w

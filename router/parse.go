@@ -1,7 +1,7 @@
 package router
 
 import (
-	"lapis-go/src/constants"
+	"lapis-go/constants"
 	"reflect"
 	"strings"
 
