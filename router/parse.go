@@ -3,6 +3,7 @@ package router
 import (
 	"reflect"
 	"strings"
+	_ "unsafe"
 
 	"github.com/limbo-tree/lapis-go/constants"
 
