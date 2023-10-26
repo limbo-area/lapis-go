@@ -16,6 +16,8 @@ func ValidateToken(c *fiber.Ctx) error {
 
 	if strings.HasPrefix(authorization, "Bearer ") {
 		accessToken = strings.TrimPrefix(authorization, "Bearer ")
+	} else if c.Cookies("access_token") != "" {
+		accessToken = c.Cookies("access_token")
 	}
 
 	if accessToken == "" {

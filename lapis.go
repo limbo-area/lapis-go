@@ -1,14 +1,16 @@
 package lapis
 
 import (
+	"embed"
 	"encoding/json"
 	"log"
-
-	"github.com/limbo-tree/lapis-go/router"
-	"github.com/limbo-tree/lapis-go/swagger"
+	"net/http"
 
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/template/html/v2"
+	"github.com/limbo-tree/lapis-go/router"
+	"github.com/limbo-tree/lapis-go/swagger"
 )
 
 type App struct {
@@ -21,7 +23,11 @@ type App struct {
 	afterInitFunc  func()
 }
 
+var templates embed.FS
+
 func New(swagger *swagger.Swagger, config fiber.Config) *App {
+	engine := html.NewFileSystem(http.FS(templates), ".html")
+	config.Views = engine
 	f := &App{
 		App:     fiber.New(config),
 		Swagger: swagger,

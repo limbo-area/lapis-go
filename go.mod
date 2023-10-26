@@ -7,6 +7,7 @@ require (
 	github.com/getkin/kin-openapi v0.120.0
 	github.com/go-playground/validator/v10 v10.15.5
 	github.com/gofiber/fiber/v2 v2.50.0
+	github.com/gofiber/template/html/v2 v2.0.5
 	github.com/golang-jwt/jwt/v5 v5.0.0
 	github.com/google/uuid v1.3.1
 	github.com/jinzhu/copier v0.4.0
@@ -24,6 +25,8 @@ require (
 	github.com/go-openapi/swag v0.22.4 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
+	github.com/gofiber/template v1.8.2 // indirect
+	github.com/gofiber/utils v1.1.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/invopop/yaml v0.2.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
